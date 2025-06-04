@@ -1,0 +1,148 @@
+# Biological Image Repository Data
+# This file is the source of truth for all repository information
+# Edit this file to update the comparison table in README.md
+
+metadata:
+  last_updated: "2025-06-04"
+  version: "2.1"
+  maintainers: 
+    - "Beth Cimini <bcimini@broadinstitute.org>"
+    - "Anne Carpenter <anne@broadinstitute.org>"
+  source: "Adapted from https://zenodo.org/records/7628604"
+  license: "CC0"
+
+repositories:
+  zenodo:
+    name: "Zenodo"
+    url: "https://zenodo.org"
+    short_url: "zenodo.org"
+    description: "All digital artifacts"
+    qualifications: "Research outputs of any kind"
+    size_limit: "50 GB per collection (soft)"
+    cost: "Free"
+    cost_details: "Donations encouraged"
+    metadata_requirements: "None"
+    non_image_data: true
+    focus: "general"
+    specialties: ["general", "mixed_data"]
+    api_available: true
+    
+  figshare:
+    name: "Figshare"
+    url: "https://figshare.com"
+    short_url: "figshare.com"
+    description: "Research data outputs"
+    qualifications: "Research data outputs"
+    size_limit: "20 GB free, 5TB paid"
+    cost: "Free-$585+"
+    cost_details: "Free to 20 GB, $395 to 100 GB, $585/250 GB beyond"
+    metadata_requirements: "Low"
+    non_image_data: true
+    focus: "general"
+    specialties: ["research_data"]
+    api_available: true
+    
+  dryad:
+    name: "Dryad"
+    url: "https://datadryad.org"
+    short_url: "datadryad.org"
+    description: "CC0 non-human data"
+    qualifications: "Non-human identifiable data that authors are willing to make CC0"
+    size_limit: "300 GB"
+    cost: "$120+"
+    cost_details: "$120, + $50/every 10 GB over 50 GB (some funders provide sponsorship)"
+    metadata_requirements: "Low"
+    non_image_data: true
+    focus: "open_data"
+    specialties: ["cc0", "non_human"]
+    api_available: true
+    
+  bioimage_archive:
+    name: "Bioimage Archive"
+    url: "https://www.ebi.ac.uk/bioimage-archive"
+    short_url: "ebi.ac.uk/bioimage-archive"
+    description: "Non-medical microscopy"
+    qualifications: "Non-medical, non-Electron Microscopy images of any kind"
+    size_limit: "No limit"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "Medium"
+    non_image_data: "Via BioStudies"
+    focus: "microscopy"
+    specialties: ["microscopy", "non_medical"]
+    api_available: true
+    
+  idr:
+    name: "IDR"
+    url: "https://idr.openmicroscopy.org"
+    short_url: "idr.openmicroscopy.org"
+    description: "Reference datasets"
+    qualifications: "Reference image datasets - complete, can be associated with other resources, likely to be re-analyzed"
+    size_limit: "1 TB"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "High"
+    non_image_data: false
+    focus: "reference_datasets"
+    specialties: ["reference", "reanalysis"]
+    api_available: true
+    
+  empiar:
+    name: "EMPIAR"
+    url: "https://www.ebi.ac.uk/pdbe/emdb/empiar/"
+    short_url: "ebi.ac.uk/pdbe/emdb/empiar"
+    description: "Electron microscopy"
+    qualifications: "Electron microscopy image data"
+    size_limit: "Tens of TB"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "High"
+    non_image_data: false
+    focus: "electron_microscopy"
+    specialties: ["electron_microscopy", "large_scale"]
+    api_available: true
+    
+  cell_painting_gallery:
+    name: "Cell Painting Gallery"
+    url: "https://broad.io/CellPaintingGallery"
+    short_url: "broad.io/CellPaintingGallery"
+    description: "Cell Painting datasets"
+    qualifications: "Large-scale image sets using the Cell Painting assay or derivatives"
+    size_limit: "No limit"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "Medium"
+    non_image_data: true
+    focus: "cell_painting"
+    specialties: ["cell_painting", "high_throughput"]
+    api_available: true
+    
+  ssbd:
+    name: "SSBD"
+    url: "https://ssbd.riken.jp/repository"
+    short_url: "ssbd.riken.jp/repository"
+    description: "Quantitative biology"
+    qualifications: "Bioimaging and biological quantitative datasets associated with studies"
+    size_limit: "16GB per file"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "Medium"
+    non_image_data: true
+    focus: "quantitative_biology"
+    specialties: ["quantitative", "systems_biology"]
+    api_available: true
+    
+  bbbc:
+    name: "BBBC"
+    url: "https://broad.io/BBBC"
+    short_url: "broad.io/BBBC"
+    description: "Benchmark datasets"
+    qualifications: "Image sets with descriptions and ground truth"
+    size_limit: "No limit"
+    cost: "Free"
+    cost_details: ""
+    metadata_requirements: "Medium"
+    non_image_data: false
+    focus: "benchmarks"
+    specialties: ["benchmarks", "ground_truth"]
+    api_available: true
