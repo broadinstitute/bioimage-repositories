@@ -26,14 +26,14 @@ echo "🔄 Generating table from YAML..."
 
 # Create temporary table file
 # Table headers correspond to YAML fields as follows:
-# Repository -> .name | URL -> .short_url/.url | Best For -> .description 
+# Repository -> .name | URL -> .short_url/.url | Best For -> .description | Qualifications -> .qualifications
 # Size Limit -> .size_limit | Cost -> .cost | Metadata -> .metadata_requirements
 cat > /tmp/table.md << 'EOF'
 
 *Auto-generated from [data/repositories.yaml](data/repositories.yaml)*
 
-| Repository | URL | Best For | Size Limit | Cost | Metadata |
-|------------|-----|----------|------------|------|----------|
+| Repository | URL | Best For | Qualifications | Size Limit | Cost | Metadata |
+|------------|-----|----------|----------------|------------|------|----------|
 EOF
 
 # Generate table rows from YAML and append to the table file
@@ -50,7 +50,7 @@ EOF
 # - Change column order by rearranging the " + .field_name + " parts
 # - Modify formatting by changing the markdown syntax (**, [], etc.)
 # - Add new fields by referencing them as .new_field_name (must exist in YAML)
-yq eval '.repositories[] | "| **" + .name + "** | [" + .short_url + "](" + .url + ") | " + .description + " | " + .size_limit + " | " + .cost + " | " + .metadata_requirements + " |"' data/repositories.yaml >> /tmp/table.md
+yq eval '.repositories[] | "| **" + .name + "** | [" + .short_url + "](" + .url + ") | " + .description + " | " + .qualifications + " | " + .size_limit + " | " + .cost + " | " + .metadata_requirements + " |"' data/repositories.yaml >> /tmp/table.md
 
 echo "" >> /tmp/table.md
 

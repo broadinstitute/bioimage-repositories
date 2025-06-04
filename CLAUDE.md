@@ -28,7 +28,7 @@ This script:
 ### Contributing workflow
 1. Edit `data/repositories.yaml` to add/modify repository information
 2. Run `./scripts/update_table.sh` to regenerate the table
-3. Commit both files together
+3. Commit modified files together
 
 ## Key Files
 
@@ -41,3 +41,4 @@ This script:
 - Always edit the YAML file, never edit the table in README.md directly
 - The table generation script uses `yq` for YAML processing
 - Repository entries follow a consistent schema with required fields
+- For presentations: take a screenshot of the GitHub-rendered table from the README
