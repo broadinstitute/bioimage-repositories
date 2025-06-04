@@ -48,7 +48,7 @@ EOF
 #
 # Logo handling:
 # - Searches for images/{key}.{ext} where ext is png, jpg, jpeg, svg, ico
-# - If found, adds <img> tag with height="16" below repository name
+# - If found, adds <img> tag with height="32" below repository name
 # - Logos appear on separate line using <br> tag
 # - No logo shown if no image file exists
 #
