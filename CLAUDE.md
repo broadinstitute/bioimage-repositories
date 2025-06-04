@@ -23,6 +23,7 @@ This script:
 - Requires `yq` tool (install with `brew install yq` on macOS)
 - Reads `data/repositories.yaml` and generates a markdown table
 - Updates the README.md between the `<!-- AUTO-GENERATED TABLE START -->` and `<!-- AUTO-GENERATED TABLE END -->` markers
+- Contains detailed inline documentation explaining YAML field mappings and modification guidelines
 
 ### Contributing workflow
 1. Edit `data/repositories.yaml` to add/modify repository information
@@ -34,7 +35,6 @@ This script:
 - `data/repositories.yaml` - Repository database (edit this to make changes)
 - `scripts/update_table.sh` - Table generation script
 - `README.md` - Contains auto-generated comparison table
-- `CONTRIBUTING.md` - Simple contribution instructions
 
 ## Important Notes
 
